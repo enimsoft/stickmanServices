@@ -1,5 +1,10 @@
 body {
-    max-width: 1920px;
+  max-width: 1920px;
+  padding: 0px;
+}
+
+body > div {
+  width: 100vw;
 }
 
 header {
@@ -11,7 +16,7 @@ header {
   flex: 1 7 auto;
 }
 
-#taral-name > div {
+#taral-name>div {
   color: #ffffff;
   background-color: #031431;
   padding: 5px;
@@ -25,63 +30,64 @@ header {
   background-color: #021E57;
 }
 
-#taral-info > div {
+#taral-info>div {
   background-color: #021E57;
   color: #ffffff;
   padding: 5px 5px 5px 5px;
 }
 
 .navbar {
-    display: inline;
-    
+  display: inline;
+  align-items: center;
+  justify-content: center;
 }
+
 .navbtn {
-    float: right;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', sans-serif; 
-    margin-top: 45px;
-    margin-right: 20px;
-    padding: 15px 25px;
-    position: relative;
-  }
+  float: right;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', sans-serif;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  padding: 15px 25px;
+  position: relative;
+}
+
 #registerbtn {
-    float: right;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', sans-serif; 
-    font-size: 15px;
-    font-weight: bolder;
-    color: FFF;
-    margin-right: 90px;
-    padding:15px 25px;
-    margin-top: 45px;  
-    margin-left: 20px;
-    background-color: rgb(141,181,90);
-    border-radius: 5px;
-    border: none;
+  float: right;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  color: FFF;
+  margin-right: 90px;
+  padding: 15px 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  background-color: rgb(141, 181, 90);
+  border-radius: 5px;
+  border: none;
 }
-#contactbtn {
 
-}
-#productsbtn {
-    
+#contactbtn {}
 
-}
-#aboutbtn {
-    
-}
+#productsbtn {}
+
+#aboutbtn {}
+
 #homebtn {
-    color: rgb(156,191,111);
-    
+  color: rgb(156, 191, 111);
 }
-.navbtn,
-.navbtn:after {
+
+.navbtn, .navbtn:after {
   -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
+  -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
-	transition: all 0.3s;
+  transition: all 0.3s;
 }
-.navbtn::before,
-.navbtn:after {
+
+.navbtn::before, .navbtn:after {
   background: black;
   opacity: 50%;
   content: '';
@@ -93,16 +99,60 @@ header {
 .navbtn:hover {
   color: FFF;
 }
+
 .navbtn::after {
-    height: 0;
-    left: 50%;
-    top: 50%;
-    width: 0;
-  }
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.navbtn:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  /* border: 1px solid green; */
   
-  .navbtn:hover:after {
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
+}
+
+.navbarandimage {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.carousel {
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  width: 100vw;
+  height: 300px;
+  /* border: 1px solid red; */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel > div:nth-child(1) {
+  background-color: orangered;
+}
+
+.carousel > div:nth-child(2) {
+  background-color: cyan;
+}
+
+.carousel > div:nth-child(3) {
+  background-color: greenyellow;
+}
+
+.carousel > div {
+  /* border: 1px solid blue; */
+  width: 100vw;
+  height: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
