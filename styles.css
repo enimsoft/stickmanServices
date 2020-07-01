@@ -1,6 +1,7 @@
 body {
   height: 350%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 960px;
   max-width: 1920px;
   padding: 0px;
 }
@@ -354,9 +355,41 @@ header {
 }
 
 #last {
+  color:white;
   margin-top: 300px;
   width: 100%;
   height: 600px;
   background-color: rgb(13,14,33);
   position: absolute;left:-50%;
+  align-items: center;
+  display: inline-flex;
+  justify-content: flex-end;
 }
+/* <div id="abouthead">About Us</div>
+<div class="gline"></div>
+<div id="enterprise">We are a 20 Year old enterprise into various<br>activities of Manufacturing and Trade. We have been<br>manufacturing Water Filters, Mineral Water Plants<br>since last 20 years and have started the business of<br>Export by the same.</div>
+<div id="aboutcompanybtn">About company</div>
+</div>
+<div>
+<div id="contacthead">Contact</div>
+<div class="gline"></div>
+<div id="phonenumber">+91 99306 04477</div>
+<div id="email">info@taralcorporation.com</div>
+<div id="address">511, Sanket Heights, Near Akshar Chowk,<br>Supharma Road Corner, Atladra,<br> Vadodara-390012.<br>Gujarat India</div>
+</div>
+ */
+.last1 {
+  font-weight: bold;
+  width: 400px;
+  height:500px;
+  background-color: pink; 
+  margin-right: 40px; 
+}
+#thead {
+  font-size: 30px;
+}
+
+
+}
+
+
