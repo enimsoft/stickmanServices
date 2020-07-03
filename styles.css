@@ -116,7 +116,7 @@ header {
   flex-flow: column wrap;
   overflow: hidden;
   width: 100vw;
-  height: 1000px;
+  height: 800px;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
@@ -513,7 +513,7 @@ header {
 }
 #images1 {
   position: relative;left: -20%;
-  width:50%;
+  max-width:50%;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
